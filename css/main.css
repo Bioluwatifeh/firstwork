@@ -1,0 +1,105 @@
+*{box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;}
+body{
+    background-color:#fff;
+    width: 100%;
+    background-image: url('../css/image/image2.jpeg');
+    background-position: center;
+    background-size: cover;
+    margin:1.5e;
+}
+.logo{
+    width: 220px;
+    height: auto;
+    font-weight: bold;
+    border-radius: 5px .2em;
+    align-items: left;
+
+}
+.logo:hover{
+    background-color: beige;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 6%;
+}
+.navbar{
+    display: flex;
+    }
+    .drt{
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px 20px;
+        transition: all .43s ease;
+    }
+section{
+    margin: auto;
+    position: center;
+    border: 0;
+}
+.info{
+    width: 100%;
+    height: 100vh;
+    position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr );
+    align-items: center;
+    margin-top: 50px ;
+}
+.info text h2{
+    color: #fff;
+    font-size: 88px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 10%;
+    margin-bottom: 0;
+    line-height: 1; 
+    letter-spacing: -3px;
+    }
+    .info text h4{
+        font-size: 88px;
+        line-height:3;
+        margin-bottom: 30px;
+        font-weight: 400;
+        letter-spacing: 2.5;
+        
+    }
+    .navbar{
+        position: fixed;
+        right: 0;
+        justify-content: space-between;
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: all .43s ease;
+         }
+      .navbar li:hover{
+        background-color:gray;
+      }
+      span{
+        color: #00c2ff;
+      }
+      @media(max-width:788px){
+        header{
+            padding: px5 1.5%;
+            transition: .3s;
+        }
+        @media(max-width:750px){
+            .info{
+                font-size: 13px;
+                transition: .5s;
+            }
+      }
+      @media(max-width:750px){
+        .navbar{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            flex-direction: column;
